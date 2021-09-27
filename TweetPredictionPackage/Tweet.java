@@ -71,10 +71,13 @@ public class Tweet implements Comparable<Tweet>
 	//displays tweet information as a string
 	public String toString ()  
 	{
+		int format_length = 35;
+		format_length -= this.getTweetUserName().length();
 		String toReturn = "\nTweet Polarity: " + this.getPolarity();
 		toReturn += "\tTweet ID: " + this.getTweetId();
 		toReturn += "\tUsername: " + this.getTweetUserName();
-		toReturn += "\tContents: " + this.getContents();
+		toReturn += String.format("%" + format_length + "s", "Contents: ");
+		toReturn += this.getContents();
 		return toReturn;
 	}
 
