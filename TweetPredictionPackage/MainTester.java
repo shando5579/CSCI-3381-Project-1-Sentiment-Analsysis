@@ -14,6 +14,12 @@ package TweetPredictionPackage;
  * Purpose: stores a bank of "positive" and "negative" words in a .txt file, used for later prediction in tweets
  */
 
+/* Author: Shandon Probst
+ * Class: CSCI 3381 8:00 AM T/TR
+ * Purpose: This program is meant to create an archive of tweets given a text file and predict their polarity
+ * in methods that reflect correct sentiment analysis
+ */
+
 public class MainTester {
 
 	public static void main(String[] args) 
